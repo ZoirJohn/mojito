@@ -12,7 +12,7 @@ export default function Cocktails() {
                 },
         })
         useGSAP(() => {
-                parallax.from('c-left-leaf', { x: -100, y: 100 })
+                parallax.from('#c-left-leaf', { x: -100, y: 100 }).from('#c-right-leaf', { x: 100, y: 100})
         }, [])
         return (
                 <section
